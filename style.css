@@ -5,6 +5,7 @@
     --header-sub-title-color: #f3edc2;
     --main-background-color: #fff;
     --footer-background-color: #52c32f;
+    --h3-background-color: #c1fbaf;
     --nav-link-color : #3f5d7f;
     --nav-link-color-hover : #5278a4;
     --menu-link-color : #1758c0;
@@ -21,6 +22,28 @@ html, body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     background: var(--background-color);
+}
+
+/* links  */
+
+/* Special Styled Links */
+a.stylish {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern typography */
+    padding: 4px 8px; /* Add some breathing space */
+    border-radius: 5px; /* Rounded edges */
+    background: linear-gradient(90deg, #007AFF, #0056d6); /* Gradient background */
+    color: white; /* Contrast text */
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.4); /* Subtle depth */
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 90%;
+}
+
+a.stylish:hover {
+    background: linear-gradient(90deg, #0056d6, #003E99); /* Change gradient on hover */
+    box-shadow: 0 4px 12px rgba(0, 86, 214, 0.5); /* Enhance glow */
 }
 
 /* header section  */
@@ -75,10 +98,12 @@ nav ul a:hover {
 
 h3 {
     text-align: center;
+    background-color: var(--h3-background-color);
+    border-radius: 10px;
 }
 
 h3,p {
-   margin: 0 10px; 
+   margin: 6px 10px; 
 }
 
 header .hero h1 {
