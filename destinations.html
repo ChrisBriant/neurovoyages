@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Neuro Voyages</title>
+</head>
+<body>
+  <header>
+    <!-- <nav class="nav">
+
+    </nav> -->
+    <div class="hero destinations">
+      <h1>Destinations</h1>
+      <h2>Locations I have Travelled To</h2>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#solo">Destinations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h3 id="#about">About</h3>
+    <p>These are some of the destinations I have been to in the last <span id="travel-years"></span> years.</p>
+    <p>I will add more to this when I get time.</p>
+
+    <h3>Destinations</h3>
+    <ul class="menu">
+      <li><a href="mauritius.html">Mauritius - November 2024</a></li>
+    </ul>
+
+  </main>
+  <script>
+    // Calculate years of travel dynamically
+    const startYear = 2009;
+    const currentYear = new Date().getFullYear();
+    document.getElementById('travel-years').textContent = currentYear - startYear;
+  </script>
+  <footer>
+    <div class="social-media">
+      <a href="https://www.instagram.com/briant.chris/">
+          <img src="img/Instagram_Glyph_White.svg" alt="Instagram">
+      </a>
+      <a href="https://x.com/Christo62953514">
+          <img src="img/x_logo.svg" alt="X">
+      </a>
+      <a href="https://www.linkedin.com/in/chris-briant-79b7a1a/">
+          <img src="img/linked_in.svg" alt="Linked In">
+      </a>
+      <a href="https://github.com/ChrisBriant">
+          <img src="img/github-mark.svg" alt="Github">
+      </a>
+  </div>
+  <p>Neuro Voyages by Chris Briant &copy;<script>document.write(new Date().getFullYear())</script></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+:root {
+    --background-color: #e4faed;
+    --nav-color : #ffef78;
+    --header-title-color: #de1173;
+    --header-sub-title-color: #f3edc2;
+    --main-background-color: #fff;
+    --footer-background-color: #52c32f;
+    --nav-link-color : #3f5d7f;
+    --nav-link-color-hover : #5278a4;
+    --menu-link-color : #1758c0;
+    --menu-link-hover-color : #367ef0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background: var(--background-color);
+}
+
+/* header section  */
+
+header {
+    height: 460px;
+}
+
+
+header .hero {
+    display: flex;
+    background-image: url('./img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 1000px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+header .hero.destinations {
+    background-image: url('./img/destinations_hero.jpg');
+}
+
+header .hero.mauritius {
+    background-image: url('./img/mauritius.jpg');
+}
+
+
+/* NAV  */
+
+nav ul {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+nav ul a:hover {
+    color: var(--nav-link-color-hover);
+}
+
+h3 {
+    text-align: center;
+}
+
+h3,p {
+   margin: 0 10px; 
+}
+
+header .hero h1 {
+    color: var(--header-title-color);
+}
+
+/* LAYOUT */
+
+main {
+    background: var(--main-background-color);
+    width: 1000px;
+    margin: auto;
+    min-height: 30vh;
+}
+
+main h1,h2,h3,p {
+    padding: 10px;
+}
+
+header .hero h2 {
+    color: var(--header-sub-title-color);
+}
+
+nav.nav {
+    height: 60px;
+    width: 1000px;
+    background: var(--nav-color);
+    margin: auto;
+}
+
+ul.menu {
+    list-style: none;
+    margin: auto;
+}
+
+ul.menu a {
+    color: var(--menu-link-color);
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+}
+
+ul.menu a:hover {
+    color: var(--menu-link-hover-color);
+}
+
+/* PICTURES  */
+
+img.location-photo {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+img.location-photo.landscape {
+    width: 600px;
+    height: 400px;
+}
+
+img.location-photo.portrait {
+    width: 400px;
+    height: 600px;
+}
+
+/* MAIN  */
+
+main ul {
+    margin: 10px 30px;
+}
+
+/* FOOTER  */
+
+footer {
+    height: 130px;
+    width: 1000px;
+    margin: auto;
+    background-color: var(--footer-background-color);
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+  
+  footer .social-media a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 1000px) {
+    header .hero {
+        width: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    footer {
+        width: auto;
+    }
+
+    main {
+        width: auto;
+        height: auto;
+    }
+
+    nav.nav {
+        width: auto;
+    }
+
+    nav.nav ul {
+        flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 600px) {
+    nav.nav {
+        height: auto;
+    }
+
+    nav.nav ul {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    footer .social-media a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.location-photo {
+        border-radius: 0;
+    }
+
+    img.location-photo.landscape {
+        width: 100%;
+    }
+    
+    img.location-photo.portrait {
+        width: 100%;
+    }
+  }
