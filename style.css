@@ -76,6 +76,10 @@ header .hero.mauritius {
     background-image: url('./img/mauritius.jpg');
 }
 
+header .hero.southkorea {
+    background-image: url('./img/south_korea/south_korea_hero.jpg');
+}
+
 
 /* NAV  */
 
@@ -167,6 +171,11 @@ img.location-photo.landscape {
 img.location-photo.portrait {
     width: 400px;
     height: 600px;
+}
+
+img.location-photo.portrait.small.centered {
+    width: 200px;
+    height: 360px;
 }
 
 /* MAIN  */
