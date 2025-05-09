@@ -121,6 +121,7 @@ main {
     width: 1000px;
     margin: auto;
     min-height: 30vh;
+    padding-bottom: 40px;
 }
 
 main h1,h2,h3,p {
