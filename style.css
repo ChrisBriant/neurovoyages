@@ -80,6 +80,16 @@ header .hero.southkorea {
     background-image: url('./img/south_korea/south_korea_hero.jpg');
 }
 
+header .hero.japan {
+    background-image: url('./img/japan/fuji_hero.jpg');
+}
+
+header .hero.croatia {
+    background-image: url('./img/split_croatia/croatia_hero.jpg');
+}
+
+
+
 
 /* NAV  */
 
@@ -177,6 +187,27 @@ img.location-photo.portrait {
 img.location-photo.portrait.small.centered {
     width: 200px;
     height: 360px;
+}
+
+.img-matrix {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.img-matrix img {
+    width: 100%;
+    height: 300px;
+}
+
+.img-matrix::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #ffee0011;
+    z-index: 100;
+    position: absolute;
 }
 
 /* MAIN  */

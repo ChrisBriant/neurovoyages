@@ -1,0 +1,13 @@
+Add-Type -AssemblyName System.Drawing
+
+$inputFolder = ".\input"
+$outputFolder = ".\output"
+
+New-Item -ItemType Directory -Force -Path $outputFolder | Out-Null
+
+Get-ChildItem $inputFolder -Filter *.jpg | ForEach-Object {
+    $inputFile = $_.FullName
+    $outputFile = Join-Path $outputFolder $_.Name
+
+    magick $inputFile -quality 65 $outputFile
+}
