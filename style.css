@@ -169,7 +169,7 @@ ul.menu a:hover {
 /* PICTURES  */
 
 img.location-photo {
-    margin: auto;
+    margin: 10px auto;
     display: block;
     border-radius: 10px;
 }
